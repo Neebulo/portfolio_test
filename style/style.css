@@ -10,8 +10,19 @@ body {
 #landing-content {
   overflow: auto;
   background-image: url(http://gph.to/1VEzGuv);
-  width: 100%;
-  height: 800px;
+  width:  100%;
+  height: 100%;
   border: 5px solid red;
-  margin: 0 auto;
+}
+
+#works {
+  background-color: red;
+}
+
+#about {
+  background-color: green;
+}
+
+#contact {
+  background-color: cyan;
 }
