@@ -8,7 +8,7 @@ body {
 }
 
 #blackBackdrop {
-  background-color: black;
+  background-image: url(../img/subtle_carbon.png);
   width: 100%;
   height: 100%;
 }
@@ -26,7 +26,7 @@ body {
 #movement1 {
   position: absolute;
   border: 5px solid gold;
-  background-image: url(../img/fractal2_fill.svg);
+  background-image: url(../img/fractal3_fill.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 300px;
@@ -76,7 +76,7 @@ body {
 }
 
 #about {
-  background-color: rgba(162, 213, 213, 1); 
+  background-color: rgba(162, 213, 213, 1);
 }
 
 #contact {
