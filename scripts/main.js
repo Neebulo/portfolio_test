@@ -25,4 +25,8 @@ $(document).ready(function() {
   // For Scroll - Snap to Page
   $.fn.fullpage();
   console.log("inside");
+
+  // For Portfolio Lightbox
+  $(".fancybox").fancybox();
+
 }); // end .ready
