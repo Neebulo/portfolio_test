@@ -5,12 +5,19 @@
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" type="text/css" href="style/fullPage.css">
-  <link rel="stylesheet" type="text/css" href="stle/jquery.fancybox.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css">
+  <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css">
 
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
   <script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
   <script type="text/javascript" src="scripts/jquery.fancybox.pack.js"></script>
   <script type="text/javascript" src="scripts/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="helpers/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js"></script>
+  <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js"></script>
 
 
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
@@ -41,12 +48,21 @@
   <div class="section" id="works" data-id="work">
     <h1 class="title">works</h1>
     <div class="spacer"></div>
-    <!-- <div class="portfolioGrid"> -->
-      <a rel="gallery" class="fancybox" href="http://gph.to/1P1XVNR"><img src="http://gph.to/1P1XVNR" alt="" /></a>
-      <a class="fancybox" rel="group" href="http://gph.to/1P1XVNR"><img src="http://gph.to/1P1XVNR" alt="" /></a>
-      <a class="fancybox" rel="group" href="http://gph.to/1P1XVNR"><img src="http://gph.to/1P1XVNR" alt="" /></a>
-    <!-- </div> --> <!-- portfolioGrid end -->
-  </div> <!-- works end -->
+
+    <a class="fancybox" href="http://neebulo.github.io/Project_1/" data-fancybox-group="gallery" title="Random Fate">
+        <div class="overlay" data-content="test">
+          <img src="images/randomFate.png" alt=""/>
+        </div>
+      </a>
+
+      <a class="fancybox" href="http://gph.to/1P1XVNR" data-fancybox-group="gallery" title="Random Fate">
+        <div class="overlay" data-content="different text">
+          <img src="http://gph.to/1P1XVNR" alt=""/>
+        </div>
+      </a>
+
+      <!-- <a rel="gallery" class="fancybox" href="images/cris.jpg" id="testWork1"><img src="http://gph.to/1P1XVNR" alt="" /></a> -->
+  </div>
 
   <div class="section" id="about">
     <h1 class="title">about</h1>
@@ -89,10 +105,11 @@
         </div>
 
         <p class="skillTitle">
-          skills
+          MongoDB
         </p>
         <div class="skillBar">
-          skills.
+          <div class="skillLevel" id="iL">
+          </div>
         </div>
       </div> <!-- skillColumn end -->
 
@@ -101,21 +118,24 @@
           skills
         </p>
         <div class="skillBar">
-          skills.
+          <div class="skillLevel" id="iL">
+          </div>
         </div>
 
         <p class="skillTitle">
           skills
         </p>
         <div class="skillBar">
-          skills.
+          <div class="skillLevel" id="iL">
+          </div>
         </div>
 
         <p class="skillTitle">
           skills
         </p>
         <div class="skillBar">
-          skills.
+          <div class="skillLevel" id="iL">
+          </div>
         </div>
       </div> <!-- skillColumn end -->
     </div> <!-- skillSection end -->
@@ -126,9 +146,9 @@
     <div class="spacer"></div>
     <div id="contactInfo">
       <div class="contactColumn">
-        Say Hello!
-        <br>
         Cristalin Solis
+        <br>
+        Los Angeles, CA
       </div>
       <div class="contactColumn">
         cris@cristalinsolis.com
@@ -150,6 +170,50 @@
       &copy; 2015 Cristalin Solis. All Rights Reserved.
     </footer>
   </div>   <!-- contact end -->
+
+  <script type="text/javascript">
+     $(document).ready(function() {
+       /*
+        *  Simple image gallery. Uses default settings
+        */
+      $(".fancybox").fancybox();
+       /*
+        *  Button helper. Disable animations, hide close button, change title type and content
+        */
+       $('.fancybox-buttons').fancybox({
+         openEffect  : 'none',
+         closeEffect : 'none',
+         prevEffect : 'none',
+         nextEffect : 'none',
+         closeBtn  : false,
+         helpers : {
+           title : {
+             type : 'inside'
+           },
+           buttons : {}
+         },
+         afterLoad : function() {
+           this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+         }
+       });
+       /*
+        *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+        */
+       $('.fancybox-thumbs').fancybox({
+         prevEffect : 'none',
+         nextEffect : 'none',
+         closeBtn  : false,
+         arrows    : false,
+         nextClick : true,
+         helpers : {
+           thumbs : {
+             width  : 50,
+             height : 50
+           }
+         }
+       });
+     });
+   </script>
 
 </body>
 </html>
