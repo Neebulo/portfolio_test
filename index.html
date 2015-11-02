@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/style.css">
@@ -49,31 +53,38 @@
     <h1 class="title">works</h1>
     <div class="spacer"></div>
 
-    <a class="fancybox" href="http://neebulo.github.io/Project_1/" data-fancybox-group="gallery" title="Random Fate">
-        <div class="overlay" data-content="Random Fate">
-          <img src="images/randomFate.png" alt=""/>
-        </div>
-      </a>
+    <div id="portfolioContainer">
+
+          <a class="caption" href="http://neebulo.github.io/Project_1/"
+          title=""
+          <h1>Random Fate</h1>
+          <h3><a href='http://neebulo.github.io/Project_1/' target='_blank'>View Full Site</a></h3>
+            <div class="overlay" data-content="Random Fate">
+              <img src="images/randomFate.png"/>
+            </div>
+          </a>
+
 
       <a class="fancybox" href="https://know-me-project2.herokuapp.com/" data-fancybox-group="gallery" title="KnowMe">
         <div class="overlay" data-content="KnowMe">
-          <img src="images/KnowMe.png" alt=""/>
+          <img src="images/KnowMe.png"/>
         </div>
       </a>
 
-      <a class="fancybox" href="http://showweet.meteor.com/" data-fancybox-group="gallery" title="ShowWeet">
+      <a class="fancybox" href="http://showweet.meteor.com/" data-fancybox-group="gallery2" title="ShowWeet">
         <div class="overlay" data-content="ShowWeet">
-          <img src="images/ShowWeet.png" alt=""/>
+          <img src="images/ShowWeet.png"/>
         </div>
       </a>
 
       <!-- <a rel="gallery" class="fancybox" href="images/cris.jpg" id="testWork1"><img src="http://gph.to/1P1XVNR" alt="" /></a> -->
   </div>
+</div>
 
   <div class="section" id="about">
     <h1 class="title">about</h1>
     <div class="spacer"></div>
-    <div id="aboutSection">
+  <!--  <div id="aboutSection">
       <div class="aboutColumn">
         <img src="images/cris.jpg" id="crisPhoto"></img>
       </div>
@@ -85,8 +96,10 @@
         <br><br>
         I build front end and back end applications
        </div>
-      </div> <!-- aboutColumn end -->
-    </div> <!-- aboutSection end -->
+      </div>
+    </div>  -->
+      <!-- aboutColumn end -->
+    <!-- aboutSection end -->
   </div> <!-- about end -->
 
   <div class="section" id="skills" data-id="skill">
@@ -116,34 +129,40 @@
         <div class="skillBar">
           <div class="skillLevel" id="iL">
           </div>
-        </div>
+        </div> <!-- skillBar end -->
       </div> <!-- skillColumn end -->
 
-      <div class="skillColumn">
+        <div class="skillColumn">
         <p class="skillTitle">
-          skills
+          Ruby on Rails
         </p>
         <div class="skillBar">
-          <div class="skillLevel" id="iL">
+          <div class="skillLevel" id="rOR">
           </div>
         </div>
 
         <p class="skillTitle">
-          skills
+          AngularJS
         </p>
         <div class="skillBar">
-          <div class="skillLevel" id="iL">
+          <div class="skillLevel" id="aX">
           </div>
         </div>
 
         <p class="skillTitle">
-          skills
+          MeteorJS
         </p>
         <div class="skillBar">
-          <div class="skillLevel" id="iL">
+          <div class="skillLevel" id="rH">
           </div>
-        </div>
+        </div> <!-- skillBar end -->
       </div> <!-- skillColumn end -->
+
+        <div id="resume">
+        Want to know more?
+        <br>
+        View my resume <a href="images/cs-resume.pdf" target='_blank'>here</a>!
+        </div>
     </div> <!-- skillSection end -->
   </div> <!-- skills end -->
 
@@ -172,54 +191,10 @@
         </div>
       </div>
     </div>  <!-- contactInfo end -->
-    <footer id="footer">
+    <footer>
       &copy; 2015 Cristalin Solis. All Rights Reserved.
     </footer>
   </div>   <!-- contact end -->
-
-  <script type="text/javascript">
-     $(document).ready(function() {
-       /*
-        *  Simple image gallery. Uses default settings
-        */
-      $(".fancybox").fancybox();
-       /*
-        *  Button helper. Disable animations, hide close button, change title type and content
-        */
-       $('.fancybox-buttons').fancybox({
-         openEffect  : 'none',
-         closeEffect : 'none',
-         prevEffect : 'none',
-         nextEffect : 'none',
-         closeBtn  : false,
-         helpers : {
-           title : {
-             type : 'inside'
-           },
-           buttons : {}
-         },
-         afterLoad : function() {
-           this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-         }
-       });
-       /*
-        *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
-        */
-       $('.fancybox-thumbs').fancybox({
-         prevEffect : 'none',
-         nextEffect : 'none',
-         closeBtn  : false,
-         arrows    : false,
-         nextClick : true,
-         helpers : {
-           thumbs : {
-             width  : 50,
-             height : 50
-           }
-         }
-       });
-     });
-   </script>
 
 </body>
 </html>
