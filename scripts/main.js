@@ -35,10 +35,20 @@ $(document).ready(function() {
 
         openEffect : 'none',
 
+        beforeLoad: function() {
+          var el, id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+        },
         helpers : {
           title : {
-            type : 'inside',
-            color : 'black'
+            type : 'inside'
           },
           overlay : {
             css : {
