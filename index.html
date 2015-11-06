@@ -8,20 +8,20 @@
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/style.css">
-  <link rel="stylesheet" type="text/css" href="style/fullPage.css">
   <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css" media="screen">
   <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css">
   <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
-  <script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
   <script type="text/javascript" src="scripts/jquery.fancybox.pack.js"></script>
   <script type="text/javascript" src="scripts/jquery.fancybox.js"></script>
   <script type="text/javascript" src="helpers/jquery.mousewheel-3.0.6.pack.js"></script>
   <script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js"></script>
   <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
@@ -30,7 +30,7 @@
 </head>
 <body>
 
-  <div class="section" data-anchor="home">
+  <div class="home">
     <div id="blackBackdrop">
       <div id="introText">
         <h1 id="introName">
@@ -49,7 +49,23 @@
   </div> <!-- blackBackdrop end -->
 </div> <!-- home end -->
 
-  <div class="section" id="works" data-id="work">
+<div id="services">
+  <span class="title">what i do</span>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      front end development
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      back end development
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      Full Stack development
+    </div>
+  </div> <!-- row end -->
+</div> <!-- services end -->
+
+  <div id="works">
     <span class="title">works</span>
     <div class="spacer"></div>
 
@@ -61,15 +77,19 @@
       </a>
 
       <div id="Random-Title" class="portfolio-title">
-          <h1>Random Fate</h1>
+        <div class="projectTitle">
+          <h2>Random Fate</h2>
           <p>Play a giphy card match game.</p>
+        </div>
           <span class="builtWith">
             Built with:
-            <p>HTML | </p>
-            <p>CSS | </p>
-            <p>JavaScript | </p>
+            <ul>
+              <li>HTML | </li>
+              <li>CSS | </li>
+              <li>JavaScript | </li>
+            </ul>
           </span>
-          <h3><a href='http://neebulo.github.io/Project_1/' target='_blank'>View Full Site</a></h3>
+          <h3><a href='http://neebulo.github.io/Project_1/' target='_blank' class="btn btn-default">View Full Site</a></h3>
       </div>
 
 
@@ -80,16 +100,17 @@
       </a>
 
       <div id="KnowMe-Title" class="portfolio-title">
-          <h1>KnowMe</h1>
+          <h2>KnowMe</h2>
+          <span class="projDesc">
           <p>Build rapport with your team.</p>
-          <span class="builtWith">
+          </span><br>
             Built with:
             <p>Ruby On Rails | </p>
             <p>PostgreSQL | </p>
             <p>JavaScript | </p>
             <p>BootStrap| </p>
           </span>
-          <h3><a href='https://know-me-project2.herokuapp.com/' target='_blank'>View Full Site</a></h3>
+          <h3><a href='https://know-me-project2.herokuapp.com/' target='_blank' class="btn btn-default">View Full Site</a></h3>
       </div>
 
       <a class="fancybox" href="http://showweet.meteor.com/" data-fancybox-group="gallery2" title="ShowWeet">
@@ -102,28 +123,22 @@
   </div>
 </div>
 
-  <div class="section" id="about">
+  <div id="about">
     <span class="title">about</span>
     <div class="spacer"></div>
-  <!--  <div id="aboutSection">
-      <div class="aboutColumn">
-        <img src="images/cris.jpg" id="crisPhoto"></img>
-      </div>
-      <div class="aboutColumn">
-        <div id="aboutDescription">
+    <div id="aboutSection">
+      <img src="images/cris.jpg" id="crisPhoto"></img>
+      <div id="aboutDescription">
         Hi!
         <br><br>
         I'm Cris, a Fullstack Developer
         <br><br>
         I build front end and back end applications
-       </div>
-      </div>
-    </div>  -->
-      <!-- aboutColumn end -->
-    <!-- aboutSection end -->
+      </div> <!-- aboutDescription end -->
+    </div> <!-- aboutSection end -->
   </div> <!-- about end -->
 
-  <div class="section" id="skills" data-id="skill">
+  <div id="skills">
       <h1 class="title">skills</h1>
       <div class="spacer"></div>
       <div id="skillSection">
@@ -186,27 +201,27 @@
       </div> <!-- skillColumn end -->
 
         <div id="resume">
-        Want to know more?
-        View my resume <a href="images/cs-resume.pdf" target='_blank'>here</a>!
+          Want to know more?<br>
+          <a href="images/cs-resume.pdf" target='_blank' class="btn btn-default btn-lg">View Résumé</a>!
         </div>
-    </div> <!-- skillSection end -->
-  </div> <!-- skills end -->
+      </div> <!-- skillSection end -->
+    </div> <!-- skills end -->
 
-  <div class="section" id="contact">
+  <div id="contact">
     <span class="title">contact</span>
     <div class="spacer"></div>
-    <div id="contactInfo">
-      <div class="contactColumn">
+    <div class="row" id="contactInfo">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         Cristalin Solis
         <br>
         Los Angeles, CA
       </div>
-      <div class="contactColumn">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         cris@cristalinsolis.com
         <br>
         626.393.0247
       </div>
-      <div class="contactColumn">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         CONNECT:
         <br>
         <div class="socialIcons">
@@ -217,9 +232,9 @@
         </div>
       </div>
     </div>  <!-- contactInfo end -->
-    <footer>
+    <!-- <footer>
       &copy; 2015 Cristalin Solis. All Rights Reserved.
-    </footer>
+    </footer> -->
   </div>   <!-- contact end -->
 
 </body>
