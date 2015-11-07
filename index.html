@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css" media="screen">
   <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css">
   <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
@@ -21,7 +21,7 @@
   <script type="text/javascript" src="helpers/jquery.mousewheel-3.0.6.pack.js"></script>
   <script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js"></script>
   <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
@@ -30,7 +30,7 @@
 </head>
 <body>
 
-  <div class="home">
+  <header class="home">
     <div id="blackBackdrop">
       <div id="introText">
         <h1 id="introName">
@@ -47,19 +47,49 @@
       <div id="movement3">
       </div> <!-- movement3 end -->
   </div> <!-- blackBackdrop end -->
-</div> <!-- home end -->
+</header> <!-- home end -->
+
+<!-- Begin Navbar -->
+<div id="nav">
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a href="#" class="navbar-brand">Home</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-bar"></span>
+        <span class="glyphicon glyphicon-bar"></span>
+        <span class="glyphicon glyphicon-bar"></span>
+      </a>
+      <div class="navbar-collapse collapse">
+        <ul class="nav pull-right navbar-nav">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /.navbar -->
+</div>
 
 <div id="services">
   <span class="title">what i do</span>
   <div class="spacer"></div>
-  <div class="row">
+  <div class="row" id="servicesContainer">
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="servicesIcon">
+      </div>
       front end development
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="servicesIcon">
+      </div>
       back end development
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="servicesIcon">
+      </div>
       Full Stack development
     </div>
   </div> <!-- row end -->
@@ -212,17 +242,19 @@
     <div class="spacer"></div>
     <div class="row" id="contactInfo">
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        Cristalin Solis
+        <strong>Cristalin Solis</strong>
         <br>
         Los Angeles, CA
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <strong>Lets Talk</strong>
+        <br>
         cris@cristalinsolis.com
         <br>
         626.393.0247
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        CONNECT:
+        <strong>CONNECT:</strong>
         <br>
         <div class="socialIcons">
         </div>
