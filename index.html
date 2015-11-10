@@ -3,7 +3,8 @@
 <head>
   <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="icon" type="image/jpg" href="images/cris.jpg">
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
@@ -79,16 +80,19 @@
   <div class="row" id="servicesContainer">
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="servicesIcon">
+        <img src="images/uxicon.svg"/>
       </div>
       front end development
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="servicesIcon">
+        <img src="images/uiicon.svg"/>
       </div>
       back end development
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="servicesIcon">
+        <img src="images/codeicon.svg"/>
       </div>
       Full Stack development
     </div>
@@ -100,6 +104,7 @@
     <div class="spacer"></div>
 
     <div id="portfolioContainer">
+
       <a class="caption" href="http://neebulo.github.io/Project_1/" data-title-id="Random-Title" title="Random">
         <div class="overlay" data-content="Random Fate">
           <img src="images/randomFate.png"/>
@@ -107,51 +112,49 @@
       </a>
 
       <div id="Random-Title" class="portfolio-title">
-        <div class="projectTitle">
-          <h2>Random Fate</h2>
-          <p>Play a giphy card match game.</p>
+        <div class="projtTitle">Random Fate - Game App</div>
+        <div class="projDesc">
+          Play a giphy card match game.
         </div>
-          <span class="builtWith">
-            Built with:
-            <ul>
-              <li>HTML | </li>
-              <li>CSS | </li>
-              <li>JavaScript | </li>
-            </ul>
-          </span>
-          <h3><a href='http://neebulo.github.io/Project_1/' target='_blank' class="btn btn-default">View Full Site</a></h3>
+          <div class="builtWith">
+            <strong>Built with:</strong>
+              <p>HTML | </p>
+              <p>CSS | </p>
+              <p>JavaScript | </p>
+          </div>
+          <a href='http://neebulo.github.io/Project_1/' target='_blank' class="btn btn-default">View Full Site</a>
       </div>
 
 
-      <a class="caption" href="https://know-me-project2.herokuapp.com/" data-fancybox-group="gallery" title="KnowMe">
+      <a class="caption" href="https://know-me-project2.herokuapp.com/" data-title-id="KnowMe-Title" data-fancybox-group="gallery2" title="KnowMe">
         <div class="overlay" data-content="KnowMe">
           <img src="images/KnowMe.png"/>
         </div>
       </a>
 
       <div id="KnowMe-Title" class="portfolio-title">
-          <h2>KnowMe</h2>
-          <span class="projDesc">
-          <p>Build rapport with your team.</p>
-          </span><br>
-            Built with:
-            <p>Ruby On Rails | </p>
-            <p>PostgreSQL | </p>
-            <p>JavaScript | </p>
-            <p>BootStrap| </p>
-          </span>
-          <h3><a href='https://know-me-project2.herokuapp.com/' target='_blank' class="btn btn-default">View Full Site</a></h3>
+        <div class="projtTitle">KnowMe - Web App</div>
+          <div class="projDesc">
+            Build rapport with your team.
+          </div>
+            <div class='builtWith'>
+              <strong>Built with:</strong>
+              <p>Ruby On Rails | </p>
+              <p>PostgreSQL | </p>
+              <p>JavaScript | </p>
+              <p>BootStrap| </p>
+            </div>
+            <a href='https://know-me-project2.herokuapp.com/' target='_blank' class="btn btn-default">View Full Site</a>
       </div>
 
-      <a class="fancybox" href="http://showweet.meteor.com/" data-fancybox-group="gallery2" title="ShowWeet">
+      <a class="caption" href="http://showweet.meteor.com/" data-title-id="ShowWeet-Title" data-fancybox-group="gallery2" title="ShowWeet">
         <div class="overlay" data-content="ShowWeet">
           <img src="images/ShowWeet.png"/>
         </div>
       </a>
 
-      <!-- <a rel="gallery" class="fancybox" href="images/cris.jpg" id="testWork1"><img src="http://gph.to/1P1XVNR" alt="" /></a> -->
-  </div>
-</div>
+  </div> <!-- portfolioContainer end -->
+</div> <!-- works end -->
 
   <div id="about">
     <span class="title">about</span>
@@ -171,8 +174,8 @@
   <div id="skills">
       <h1 class="title">skills</h1>
       <div class="spacer"></div>
-      <div id="skillSection">
-      <div class="skillColumn">
+      <div class="row" id="skillSection">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <p class="skillTitle">
           JavaScript
         </p>
@@ -181,27 +184,9 @@
             75%
           </div>
         </div>
+      </div>
 
-        <p class="skillTitle">
-          NodeJS
-        </p>
-        <div class="skillBar">
-          <div class="skillLevel" id="pS">
-            85%
-          </div>
-        </div>
-
-        <p class="skillTitle">
-          MongoDB
-        </p>
-        <div class="skillBar">
-          <div class="skillLevel" id="iL">
-            90%
-          </div>
-        </div> <!-- skillBar end -->
-      </div> <!-- skillColumn end -->
-
-        <div class="skillColumn">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <p class="skillTitle">
           Ruby on Rails
         </p>
@@ -210,25 +195,51 @@
             80%
           </div>
         </div>
+      </div>
 
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <p class="skillTitle">
+          NodeJS
+        </p>
+        <div class="skillBar">
+          <div class="skillLevel" id="rOR">
+            80%
+          </div>
+        </div> <!-- skillBar end -->
+      </div> <!-- col-xs-12 end -->
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <p class="skillTitle">
+          MongoDB
+        </p>
+        <div class="skillBar">
+          <div class="skillLevel" id="pS">
+            85%
+          </div>
+        </div> <!-- skillBar end -->
+      </div> <!-- col-xs-12 end -->
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <p class="skillTitle">
           AngularJS
         </p>
         <div class="skillBar">
-          <div class="skillLevel" id="aX">
-            85%
+          <div class="skillLevel" id="iL">
+            90%
           </div>
-        </div>
+        </div> <!-- skillBar end -->
+      </div> <!-- col-xs-12 end -->
 
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <p class="skillTitle">
           MeteorJS
         </p>
         <div class="skillBar">
-          <div class="skillLevel" id="rH">
-            85%
+          <div class="skillLevel" id="rOR">
+            80%
           </div>
         </div> <!-- skillBar end -->
-      </div> <!-- skillColumn end -->
+      </div> <!-- col-xs-12 end -->
 
         <div id="resume">
           Want to know more?<br>
