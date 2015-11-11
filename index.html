@@ -29,11 +29,11 @@
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
   <title>Cristalin Solis | Full Stack Web Engineer</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav">
 
   <header class="home">
     <div id="blackBackdrop">
-      <div id="introText">
+      <div class="bounceIn" id="introText">
         <h1 id="introName">
         CRISTALIN SOLIS
         </h1>
@@ -63,11 +63,11 @@
       </a>
       <div class="navbar-collapse collapse">
         <ul class="nav pull-right navbar-nav">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -80,19 +80,19 @@
   <div class="row" id="servicesContainer">
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="servicesIcon">
-        <img src="images/uxicon.svg"/>
+        <img src="images/uxicon.svg" id="uxIcon"/>
       </div>
       front end development
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="servicesIcon">
-        <img src="images/uiicon.svg"/>
+        <img src="images/uiicon.svg" id="uiIcon"/>
       </div>
       back end development
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="servicesIcon">
-        <img src="images/codeicon.svg"/>
+        <img src="images/codeicon.svg" id="codeIcon"/>
       </div>
       Full Stack development
     </div>
@@ -105,7 +105,7 @@
 
     <div id="portfolioContainer">
 
-      <a class="caption" href="http://neebulo.github.io/Project_1/" data-title-id="Random-Title" title="Random">
+      <a class="caption" href="http://neebulo.github.io/Project_1/" data-title-id="Random-Title">
         <div class="overlay" data-content="Random Fate">
           <img src="images/randomFate.png"/>
         </div>
@@ -126,7 +126,7 @@
       </div>
 
 
-      <a class="caption" href="https://know-me-project2.herokuapp.com/" data-title-id="KnowMe-Title" data-fancybox-group="gallery2" title="KnowMe">
+      <a class="caption" href="https://know-me-project2.herokuapp.com/" data-title-id="KnowMe-Title" data-fancybox-group="gallery2">
         <div class="overlay" data-content="KnowMe">
           <img src="images/KnowMe.png"/>
         </div>
