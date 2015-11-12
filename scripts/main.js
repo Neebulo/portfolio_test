@@ -96,5 +96,14 @@ $(document).ready(function() {
     });
   });
 
+  //Refresh Scrollspy
+ setTimeout(updateScrollSpy, 1000);
+
+ function updateScrollSpy() {
+   $('[data-spy="scroll"]').each(function() {
+     var $spy = $(this).scrollspy('refresh')
+   });
+ }
+
 
 }); // end .ready
