@@ -56,8 +56,12 @@ $(document).ready(function() {
           },
           overlay : {
             css : {
-              'background' : 'rgba(238,238,238,0.85)'
+              'background' : 'rgba(0,0,0,0.85)'
             }
+          },
+          thumbs : {
+            width  : 50,
+            height : 50
           }
         }
       });
