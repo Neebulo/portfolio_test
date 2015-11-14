@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css" media="screen">
   <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
@@ -21,7 +21,7 @@
   <script type="text/javascript" src="scripts/jquery.fancybox.js"></script>
   <script type="text/javascript" src="helpers/jquery.mousewheel-3.0.6.pack.js"></script>
   <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
 
 
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
@@ -55,43 +55,42 @@
 
 <!-- Begin Navbar -->
 <div id="nav">
-  <div class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a href="#" class="navbar-brand"><img src="images/cris.jpg" id="logo"/></a>
-      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="glyphicon glyphicon-align-justify"></span>
-      </a>
-      <div class="navbar-collapse collapse">
-        <ul class="nav pull-right navbar-nav">
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-  </div><!-- /.navbar -->
-</div>
+  <div class="container">
+    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+    <a href="#" class="navbar-brand"><img src="images/cris.jpg" id="logo"/></a>
+    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="glyphicon glyphicon-align-justify"></span>
+    </a>
+    <div class="navbar-collapse collapse">
+      <ul class="nav pull-right navbar-nav">
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div> <!-- navbar-collapse end -->
+  </div> <!-- container end -->
+</div> <!-- nav end -->
+
 
 <div id="services">
   <span class="title">what i do</span>
   <div class="spacer"></div>
   <div class="row" id="servicesContainer">
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="mobile-whole small-thirds medium-thirds large-thirds">
       <div class="servicesIcon">
         <img src="images/uxicon.svg" id="uxIcon"/>
       </div>
       front end development
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="mobile-whole small-thirds medium-thirds large-thirds">
       <div class="servicesIcon">
         <img src="images/uiicon.svg" id="uiIcon"/>
       </div>
       back end development
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="mobile-whole small-thirds medium-thirds large-thirds">
       <div class="servicesIcon">
         <img src="images/codeicon.svg" id="codeIcon"/>
       </div>
@@ -176,7 +175,7 @@
       <h1 class="title">skills</h1>
       <div class="spacer"></div>
       <div class="row" id="skillSection">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <p class="skillTitle">
           JavaScript
         </p>
@@ -187,7 +186,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <p class="skillTitle">
           Ruby on Rails
         </p>
@@ -198,7 +197,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <p class="skillTitle">
           NodeJS
         </p>
@@ -209,7 +208,7 @@
         </div> <!-- skillBar end -->
       </div> <!-- col-xs-12 end -->
 
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <p class="skillTitle">
           MongoDB
         </p>
@@ -220,7 +219,7 @@
         </div> <!-- skillBar end -->
       </div> <!-- col-xs-12 end -->
 
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <p class="skillTitle">
           AngularJS
         </p>
@@ -231,7 +230,7 @@
         </div> <!-- skillBar end -->
       </div> <!-- col-xs-12 end -->
 
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <p class="skillTitle">
           MeteorJS
         </p>
@@ -254,19 +253,19 @@
       <span class="title">contact</span>
       <div class="spacer"></div>
        <div class="row" id="contactInfo">
-         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+         <div class="mobile-whole small-thirds medium-thirds large-thirds">
            <strong>Cristalin Solis</strong>
            <br>
            Los Angeles, CA
          </div>
-         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+         <div class="mobile-whole small-thirds medium-thirds large-thirds">
            <strong>Lets Talk</strong>
            <br>
            cris@cristalinsolis.com
            <br>
            626.393.0247
          </div>
-         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+         <div class="mobile-whole small-thirds medium-thirds large-thirds">
            <strong>CONNECT:</strong>
            <br>
            <div class="socialIcons">
