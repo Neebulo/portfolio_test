@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 //Affix Nav
   $(window).scroll(function(){
-    var scrollTop = $('header').height();
+    var scrollTop = $('.home').height();
     if($(window).scrollTop() >= scrollTop){
       $('#nav-container').css({
         visibility: 'visible',
@@ -37,41 +37,17 @@ $(document).ready(function() {
     $('#movement3').css('top', amountMovedY);
   });
 
-  // For Portfolio Lightbox
-  $(".fancybox").fancybox();
+  // Sticky nav
+  $('body').addClass('js');
+  var $nav = $('#nav'),
+    $menulink = $('.menu-link');
 
-  $(".caption").fancybox({
-        wrapCSS    : 'fancybox-custom',
-        closeClick : true,
-
-        openEffect : 'elastic',
-
-        beforeLoad: function() {
-          var el, id = $(this.element).data('title-id');
-
-          if (id) {
-            el = $('#' + id);
-
-            if (el.length) {
-              this.title = el.html();
-            }
-          }
-        },
-        helpers : {
-          title : {
-            type : 'inside'
-          },
-          overlay : {
-            css : {
-              'background' : 'rgba(0,0,0,0.85)'
-            }
-          },
-          thumbs : {
-            width  : 50,
-            height : 50
-          }
-        }
-      });
+  $menulink.click(function() {
+    console.log("clicked");
+    $menulink.toggleClass('active');
+    $nav.toggleClass('active');
+    return false;
+  });
 
       // jQuery Scroll Animation
   $(window).scroll(function(){
@@ -109,15 +85,3 @@ $(document).ready(function() {
 
 
 }); // end .ready
-
-$(document).ready(function() {
-  $('body').addClass('js');
-  var $nav = $('#nav'),
-    $menulink = $('.menu-link');
-
-$menulink.click(function() {
-  console.log("clicked");
-  $menulink.toggleClass('active');
-  $nav.toggleClass('active');
-  return false;
-});});

@@ -4,29 +4,22 @@
   <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <meta name="description" content="Cristalin Solis is a Full-Stack based in Los Angeles.">
+  <meta name="description" content="Cristalin Solis is a Full-Stack developer based in Los Angeles.">
   <meta property="og:image" content="images/cris.jpg" />
   <link rel="icon" type="image/jpg" href="images/cris.jpg">
 
   <link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="style/normalize.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
-  <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css">
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
-  <script type="text/javascript" src="scripts/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="scripts/jquery.fancybox.js"></script>
-  <script type="text/javascript" src="helpers/jquery.mousewheel-3.0.6.pack.js"></script>
-  <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js"></script>
 
   <title>Cristalin Solis | Full Stack Web Engineer</title>
 </head>
 <body>
 
-  <header class="home">
+  <div class="home">
     <div id="blackBackdrop">
       <div class="bounceIn" id="introText">
         <h1 id="introName">
@@ -46,9 +39,9 @@
       <div id="movement3">
       </div> <!-- movement3 end -->
   </div> <!-- blackBackdrop end -->
-</header> <!-- home end -->
+</div> <!-- home end -->
 
-<!-- Begin Navbar -->
+<!--  Navbar -->
 <div id="nav-container">
   <a href="#nav" class="menu-link">Menu</a>
   <nav id="nav">
@@ -66,7 +59,6 @@
 
 <div id="services">
   <span class="title">what i do</span>
-  <div class="spacer"></div>
   <div class="row" id="servicesContainer">
     <div class="mobile-whole small-thirds medium-thirds large-thirds">
       <div class="servicesIcon">
@@ -89,82 +81,58 @@
   </div> <!-- row end -->
 </div> <!-- services end -->
 
-  <div id="works">
-    <span class="title">works</span>
-    <div class="spacer"></div>
+<div id="works">
 
-    <div id="portfolioContainer">
-
-      <a class="caption" href="http://neebulo.github.io/Project_1/" data-title-id="Random-Title">
-        <div class="overlay" data-content="Random Fate">
-          <img src="images/randomFate.png"/>
+      <a href="http://neebulo.github.io/Project_1/" data-title-id="Random-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="Random Fate">
+          <img src="images/randomFate.png" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <div id="Random-Title" class="portfolio-title">
-        <div class="projtTitle">Random Fate - Game App</div>
-        <div class="projDesc">
-          Play a giphy card match game.
-        </div>
-          <div class="builtWith">
-            <strong>Built with:</strong>
-              <p>HTML | </p>
-              <p>CSS | </p>
-              <p>JavaScript | </p>
-          </div>
-          <a href='http://neebulo.github.io/Project_1/' target='_blank'>View Full Site</a>
-      </div>
-
-
-      <a class="caption" href="https://know-me-project2.herokuapp.com/" data-title-id="KnowMe-Title" data-fancybox-group="gallery2">
-        <div class="overlay" data-content="KnowMe">
-          <img src="images/KnowMe.png"/>
+      <a href="https://know-me-project2.herokuapp.com/" data-title-id="KnowMe-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="KnowMe">
+          <img src="images/KnowMe.png" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <div id="KnowMe-Title" class="portfolio-title">
-        <div class="projtTitle">KnowMe - Web App</div>
-          <div class="projDesc">
-            Build rapport with your team.
-          </div>
-            <div class='builtWith'>
-              <strong>Built with:</strong>
-              <p>Ruby On Rails | </p>
-              <p>PostgreSQL | </p>
-              <p>JavaScript | </p>
-              <p>BootStrap| </p>
-            </div>
-            <a href='https://know-me-project2.herokuapp.com/' target='_blank'>View Full Site</a>
-      </div>
-
-      <a class="caption" href="http://showweet.meteor.com/" data-title-id="ShowWeet-Title" data-fancybox-group="gallery2" title="ShowWeet">
-        <div class="overlay" data-content="ShowWeet">
-          <img src="images/ShowWeet.png"/>
+      <a href="http://showweet.meteor.com/" data-title-id="ShowWeet-Title">
+        <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="ShowWeet">
+          <img src="images/ShowWeet.png" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
-
-  </div> <!-- portfolioContainer end -->
+      
 </div> <!-- works end -->
 
   <div id="about">
-    <span class="title">about</span>
+    <span class="title">about me</span>
     <div class="spacer"></div>
     <div id="aboutSection">
-      <img src="images/cris.jpg" id="aboutImage"></img>
       <div id="aboutDescription">
         Hi!
         <br><br>
-        I'm Cris, a Fullstack Developer
+        I'm Cris, a Fullstack Developer in Los Angeles.
         <br><br>
-        I build front end and back end applications
+        I build front end and back end applications.
       </div> <!-- aboutDescription end -->
     </div> <!-- aboutSection end -->
+
+    <div id="resume">
+     Want to know more?<br>
+     <a href="http://elliehoshizaki.com/img/EH_R%C3%A9sum%C3%A9.pdf" target='_blank'>
+       <button class="btn-default">
+         View Résumé
+       </button>
+     </a>
+   </div>
+
   </div> <!-- about end -->
 
   <div id="skills">
-      <h1 class="title">skills</h1>
-      <div class="spacer"></div>
-      <div class="row" id="skillSection">
+    <div id="aboutImage">
+      <img src="images/cris.jpg"></img>
+    </div>
+      <span class="title">my skillset</span>
+      <div id="skillSection">
       <div class="mobile-whole small-thirds medium-thirds large-thirds">
         <p class="skillTitle">
           JavaScript
@@ -201,17 +169,11 @@
         </p>
       </div> <!-- col-xs-12 end -->
 
-        <div id="resume">
-          Want to know more?<br>
-          <a href="images/cs-resume.pdf" target='_blank' class="btn btn-default btn-lg">View Résumé</a>!
-        </div>
       </div> <!-- skillSection end -->
     </div> <!-- skills end -->
 
   <div id="contact">
     <div id="contactContainer">
-      <span class="title">contact</span>
-      <div class="spacer"></div>
        <div class="row" id="contactInfo">
          <div class="mobile-whole small-thirds medium-thirds large-thirds">
            <strong>Cristalin Solis</strong>
